@@ -1,31 +1,31 @@
-# typescript-open-source-template
+# @necord/schematics
 
-This is a template for creating a new open source project in TypeScript.
+This is a collection of schematics for Necord projects.
 
-## Features
-* [TypeScript](https://www.typescriptlang.org/)
-* [Jest](https://jestjs.io/)
-* [ESLint](https://eslint.org/)
-* [Prettier](https://prettier.io/)
-* GitHub Actions
-* [Dependabot](https://dependabot.com/)
-* Semantic Release
-* Commitizen
-* Commitlint
-* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-* [Semantic Versioning](https://semver.org/)
+### Testing
 
-## Usage
-1. Click the "Use this template" button to create a new repository from this template.
-2. Clone the new repository to your local machine.
-3. Run `npm install` to install dependencies.
-4. Replace name, description, and other fields in `package.json` with your own.
-5. Replace the contents of this file with your own.
-6. Replace name of package at github actions workflow file
+To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command
+line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a
+debug mode.
 
-## Scripts
-* `npm run build` - Compile TypeScript to JavaScript.
-* `npm run lint` - Lint TypeScript files.
-* `npm run test` - Run tests.
-* `npm run publish:npm` - Publish package to npm.
-* `npm run publish:dev` - Publish package to npm with `dev` tag.
+```bash
+npm i -g @angular-devkit/schematics-cli
+```
+
+Check the documentation with
+
+```bash
+schematics --help
+```
+
+Now you can execute generation commands.
+
+```bash
+schematics @necord/schematics:slash-command
+```
+
+### Unit Testing
+
+`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+
+That's it!
