@@ -13,9 +13,7 @@
 		"lint": "eslint --ignore-path .gitignore {integration,src}/**/*.ts",
 		"test": "jest"
 	},
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"schematics": "./dist/collection.json",
+	"schematics": "./src/collection.json",
 	"publishConfig": {
 		"access": "public"
 	},
