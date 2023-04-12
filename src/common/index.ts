@@ -41,6 +41,7 @@ export class CommonSchematicFactory<T extends CommonOptions = CommonOptions> {
 	}
 
 	public generate(options: T): Source {
+		console.log(url(join(this.templatePath as Path)));
 		return (context: SchematicContext) =>
 			apply(url(join(this.templatePath as Path)), [
 				options.spec ? noop() : filter((path: string) => !path.endsWith('.spec.ts')),
