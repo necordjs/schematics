@@ -5,7 +5,7 @@ import { Message } from 'discord.js';
 @Injectable()
 export class <%= classify(name) %>Commands {
     @MessageCommand({ name: '<%= name.toLowerCase() %>' })
-    public async copyMessage(
+    public copyMessage(
         @Context() [interaction]: MessageCommandContext,
         @TargetMessage() message: Message
     ) {

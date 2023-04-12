@@ -5,7 +5,7 @@ import { User } from 'discord.js';
 @Injectable()
 export class <%= classify(name) %>Commands {
     @UserCommand({ name: '<%= name.toLowerCase() %>' })
-    public async <%= name %>(
+    public <%= name %>(
         @Context() [interaction]: UserCommandContext,
         @TargetUser() user: User
     ) {

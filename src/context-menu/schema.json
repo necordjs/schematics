@@ -38,6 +38,6 @@
 		}
 	},
 	"required": [
-		"context-menu-type"
+		"strategy"
 	]
 }

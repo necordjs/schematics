@@ -1,0 +1,13 @@
+import { Injectable } from '@nestjs/common';
+import { Context, SlashCommand, SlashCommandContext } from 'necord';
+
+@Injectable()
+export class <%= classify(name) %>Commands {
+     @SlashCommand({
+        name: '<%= name.toLowerCase() %>',
+        description: '<%= name %>'
+    })
+    public <%= name %>(@Context() [interaction]: SlashCommandContext) {
+    	return interaction.reply({ content: 'Pong!' });
+    }
+}

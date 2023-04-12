@@ -1,0 +1,10 @@
+import { Injectable } from '@nestjs/common';
+import { Context, SelectMenu, SelectMenuContext, Values } from 'necord';
+
+@Injectable()
+export class <%= classify(name) %>Components {
+	@SelectMenu('<%= name %>')
+    public <%= name %>(@Context() [interaction]: SelectMenuContext, @Values() values: string[]) {
+        return interaction.reply({ content: `Your selected color - ${values.join(' ')}` });
+    }
+}

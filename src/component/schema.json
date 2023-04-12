@@ -3,7 +3,8 @@
 		"name": {
 			"type": "string",
 			"minLength": 1,
-			"x-prompt": "What is the questions set name?"
+			"description": "Command name",
+			"x-prompt": "What is the command name?"
 		},
 		"path": {
 			"type": "string",
@@ -25,6 +26,18 @@
 			"default": true,
 			"description": "Specifies if a spec file is generated.",
 			"x-prompt": "Generate spec file as well?"
+		},
+		"strategy": {
+			"type": "string",
+			"description": "The type of component to create.",
+			"enum": [
+				"button",
+				"select"
+			],
+			"x-prompt": "What type you want to use?"
 		}
-	}
+	},
+	"required": [
+		"strategy"
+	]
 }

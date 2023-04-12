@@ -21,7 +21,8 @@ schematics --help
 Now you can execute generation commands.
 
 ```bash
-schematics @necord/schematics:command
+yarn build
+schematics .:command
 ```
 
 ### Unit Testing

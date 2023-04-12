@@ -1,0 +1,10 @@
+import { Injectable } from '@nestjs/common';
+import { Context, Button, ButtonContext } from 'necord';
+
+@Injectable()
+export class <%= classify(name) %>Components {
+	@Button('<%= name %>')
+    public <%= name %>(@Context() [interaction]: ButtonContext) {
+        return interaction.reply({ content: 'Button clicked!' });
+    }
+}

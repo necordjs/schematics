@@ -1,0 +1,13 @@
+import { Injectable } from '@nestjs/common';
+import { Context, TextCommand, TextCommandContext, Arguments } from 'necord';
+
+@Injectable()
+export class <%= classify(name) %>Commands {
+    @TextCommand({
+        name: '<%= name.toLowerCase() %>',
+        description: '<%= name %>',
+    })
+    public <%= name %>(@Context() [message]: TextCommandContext, @Arguments() args: string[]) {
+        return message.reply('pong!');
+    }
+}

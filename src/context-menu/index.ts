@@ -7,7 +7,7 @@ class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOpti
 	public type = 'context-menu';
 
 	generate(options: ContextMenuOptions): Source {
-		switch (options['context-menu-type']) {
+		switch (options.strategy) {
 			case ContextMenuType.Message:
 				this.templatePath = './files/message-menu';
 				break;

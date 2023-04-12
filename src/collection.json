@@ -1,12 +1,36 @@
 {
 	"$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
 	"schematics": {
+		"command": {
+			"description": "Generates a command component.",
+			"factory": "./command/index#command",
+			"schema": "./command/schema.json",
+			"aliases": [
+				"c"
+			]
+		},
 		"context-menu": {
 			"description": "Generates a context menu component.",
 			"factory": "./context-menu/index#contextMenu",
 			"schema": "./context-menu/schema.json",
 			"aliases": [
 				"cm"
+			]
+		},
+		"component": {
+			"description": "Generates a component.",
+			"factory": "./component/index#component",
+			"schema": "./component/schema.json",
+			"aliases": [
+				"com"
+			]
+		},
+		"modal": {
+			"description": "Generates a modal component.",
+			"factory": "./modal/index#modal",
+			"schema": "./modal/schema.json",
+			"aliases": [
+				"m"
 			]
 		}
 	}
