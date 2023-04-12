@@ -2,6 +2,12 @@
 
 This is a collection of schematics for Necord projects.
 
+### Installation
+
+```bash
+npm i -D @necord/schematics
+```
+
 ### Testing
 
 To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command
