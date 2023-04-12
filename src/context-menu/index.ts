@@ -2,6 +2,7 @@ import { CommonSchematicFactory } from '../common';
 import { ContextMenuOptions } from './context-menu-options.interface';
 import { Rule, Source } from '@angular-devkit/schematics';
 import { ContextMenuType } from './context-menu-type.enum';
+import * as path from 'path';
 
 class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOptions> {
 	public type = 'context-menu';
@@ -9,10 +10,10 @@ class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOpti
 	generate(options: ContextMenuOptions): Source {
 		switch (options.type) {
 			case ContextMenuType.Message:
-				this.templatePath = './files/message-menu';
+				this.templatePath = path.join(__dirname, './files/message-menu');
 				break;
 			case ContextMenuType.User:
-				this.templatePath = './files/user-menu';
+				this.templatePath = path.join(__dirname, './files/user-menu');
 				break;
 		}
 
