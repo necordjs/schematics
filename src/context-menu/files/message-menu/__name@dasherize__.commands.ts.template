@@ -1,0 +1,14 @@
+import { Injectable } from '@nestjs/common';
+import { Context, MessageCommand, MessageCommandContext, TargetMessage } from 'necord';
+import { Message } from 'discord.js';
+
+@Injectable()
+export class <%= classify(name) %>Commands {
+    @MessageCommand({ name: '<%= name.toLowerCase() %>' })
+    public async copyMessage(
+        @Context() [interaction]: MessageCommandContext,
+        @TargetMessage() message: Message
+    ) {
+        return interaction.reply({ content: message.content });
+    }
+}
