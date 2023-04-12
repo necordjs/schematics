@@ -33,7 +33,8 @@
 			"enum": [
 				"message",
 				"user"
-			]
+			],
+			"x-prompt": "What type you want to use?"
 		}
 	},
 	"required": [
