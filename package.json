@@ -15,10 +15,10 @@
 	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"schematics": "./dist/collection.json",
 	"publishConfig": {
 		"access": "public"
 	},
-	"schematics": "./src/collection.json",
 	"author": "Alexey Filippov <socket.someone@gmail.com>",
 	"license": "MIT",
 	"keywords": [
