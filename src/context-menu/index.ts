@@ -10,10 +10,10 @@ class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOpti
 	generate(options: ContextMenuOptions): Source {
 		switch (options['context-menu-type']) {
 			case ContextMenuType.Message:
-				this.templatePath = path.join(__dirname, './files/message-menu');
+				this.templatePath = './files/message-menu';
 				break;
 			case ContextMenuType.User:
-				this.templatePath = path.join(__dirname, './files/user-menu');
+				this.templatePath = './files/user-menu';
 				break;
 		}
 
