@@ -15,7 +15,8 @@
 	},
 	"schematics": "./src/collection.json",
 	"files": [
-		"src"
+		"src",
+		"*.md"
 	],
 	"publishConfig": {
 		"access": "public"
