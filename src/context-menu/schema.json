@@ -27,7 +27,7 @@
 			"description": "Specifies if a spec file is generated.",
 			"x-prompt": "Generate spec file as well?"
 		},
-		"type": {
+		"context-menu-type": {
 			"type": "string",
 			"description": "The type of context menu to create.",
 			"enum": [
