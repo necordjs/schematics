@@ -1,7 +1,7 @@
 {
 	"name": "@necord/schematics",
 	"description": "A collection of schematics for Necord projects with NestJS",
-	"version": "1.1.10",
+	"version": "1.1.11",
 	"scripts": {
 		"build": "rimraf -rf dist && tsc -p tsconfig.json",
 		"postbuild": "npm run copy:collection && npm run copy:lib",
