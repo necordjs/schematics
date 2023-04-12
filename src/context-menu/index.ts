@@ -8,6 +8,7 @@ class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOpti
 	public type = 'context-menu';
 
 	generate(options: ContextMenuOptions): Source {
+		console.log(__dirname, './files/user-menu', options.type);
 		switch (options.type) {
 			case ContextMenuType.Message:
 				this.templatePath = path.join(__dirname, './files/message-menu');
