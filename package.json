@@ -16,6 +16,9 @@
 	"files": [
 		"src"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"schematics": "./src/collection.json",
 	"author": "Alexey Filippov <socket.someone@gmail.com>",
 	"license": "MIT",
