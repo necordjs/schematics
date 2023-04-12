@@ -38,6 +38,6 @@
 		}
 	},
 	"required": [
-		"type"
+		"context-menu-type"
 	]
 }
