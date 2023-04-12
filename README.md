@@ -33,6 +33,6 @@ schematics .:command
 
 ### Unit Testing
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+`npm run test` will run the unit tests, using Jest as a runner and test framework.
 
 That's it!
