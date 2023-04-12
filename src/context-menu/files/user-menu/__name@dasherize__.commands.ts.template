@@ -1,0 +1,14 @@
+import { Injectable } from '@nestjs/common';
+import { Context, UserCommand, UserCommandContext, TargetUser } from 'necord';
+import { User } from 'discord.js';
+
+@Injectable()
+export class <%= classify(name) %>Commands {
+    @UserCommand({ name: <%= name.toLowerCase() %> })
+    public async <%= name %>(
+        @Context() [interaction]: UserCommandContext,
+        @TargetUser() user: User
+    ) {
+        return interaction.reply({ content: `Hello ${user.username}!` });
+    }
+}

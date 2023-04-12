@@ -21,7 +21,7 @@ schematics --help
 Now you can execute generation commands.
 
 ```bash
-schematics @necord/schematics:slash-command
+schematics @necord/schematics:command
 ```
 
 ### Unit Testing

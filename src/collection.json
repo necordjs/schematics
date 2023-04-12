@@ -1,20 +1,13 @@
 {
 	"$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
 	"schematics": {
-		"application": {
-			"description": "A schematic to generate a new application",
-			"factory": "./application/index#application",
-			"schema": "./application/schema.json"
-		},
-		"command": {
-			"description": "A schematic to generate a command file",
-			"factory": "./command/index#command",
-			"schema": "./command/schema.json"
-		},
-		"question": {
-			"description": "A schematic to generate a question file",
-			"factory": "./question/index#question",
-			"schema": "./question/schema.json"
+		"context-menu": {
+			"description": "Generates a context menu component.",
+			"factory": "./context-menu/index#contextMenu",
+			"schema": "./context-menu/schema.json",
+			"aliases": [
+				"cm"
+			]
 		}
 	}
 }
