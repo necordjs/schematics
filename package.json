@@ -19,6 +19,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"readme": "README.md",
 	"schematics": "./src/collection.json",
 	"author": "Alexey Filippov <socket.someone@gmail.com>",
 	"license": "MIT",
