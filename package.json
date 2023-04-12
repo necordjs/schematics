@@ -14,8 +14,10 @@
 		"test": "jest"
 	},
 	"schematics": "./src/collection.json",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"files": [
-		"src",
+		"dist/**/*",
 		"*.md"
 	],
 	"publishConfig": {
