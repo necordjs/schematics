@@ -4,6 +4,9 @@
 	"version": "1.1.9",
 	"scripts": {
 		"build": "rimraf -rf dist && tsc -p tsconfig.json",
+		"postbuild": "npm run copy:collection && npm run copy:lib",
+		"copy:collection": "copyfiles --up 1 src/collection.json dist && copyfiles --up 1 src/**/schema.json dist",
+		"copy:lib": "copyfiles --up 1 src/**/files/**/* dist",
 		"prepublish:npm": "npm run build",
 		"publish:npm": "release-it",
 		"prepublish:dev": "npm run build",
@@ -13,9 +16,11 @@
 		"lint": "eslint --ignore-path .gitignore {integration,src}/**/*.ts",
 		"test": "jest"
 	},
-	"schematics": "./src/collection.json",
+	"schematics": "./dist/collection.json",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"files": [
-		"src/**/*",
+		"dist/**/*",
 		"*.md"
 	],
 	"publishConfig": {

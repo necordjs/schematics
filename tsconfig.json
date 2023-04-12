@@ -2,24 +2,22 @@
 	"compilerOptions": {
 		"module": "commonjs",
 		"declaration": true,
+		"noImplicitAny": false,
+		"noUnusedLocals": false,
 		"removeComments": false,
+		"noLib": false,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"target": "es2017",
-		"outDir": "./dist",
-		"baseUrl": ".",
-		"strict": true,
-		"noUnusedLocals": false,
-		"sourceMap": true,
-		"lib": [
-			"ES7"
-		]
+		"target": "ES2020",
+		"skipLibCheck": true,
+		"sourceMap": false,
+		"outDir": "./dist"
 	},
 	"include": [
-		"src/**/*"
+		"src/**/*",
+		"src/*.spec.ts"
 	],
 	"exclude": [
-		"node_modules",
-		"dist"
+		"node_modules"
 	]
 }
