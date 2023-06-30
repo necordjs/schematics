@@ -24,10 +24,10 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/core@16.1.2":
-  version "16.1.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-16.1.2.tgz#0ad662b1a7a53a0b9d62fb8284d979bb1a2b6008"
-  integrity sha512-RGSkcu03Zybg7drenKxBHvQ/xF8LLZR7o09S4vtLVDwMTGW/ZHnZ+YSC0OuRddbtBlBRhjmsQN6HPvXXfwGLkQ==
+"@angular-devkit/core@16.1.3":
+  version "16.1.3"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-16.1.3.tgz#51bceb2d3472b0458ab197ddfae3c2138120b86f"
+  integrity sha512-cFhNdJHumNMZGD3NYxOtNuMGRQXeDnKbwvK+IJmKAttXt8na6EvURR/ZxZOI7rl/YRVX+vcNSdtXz3hE6g+Isw==
   dependencies:
     ajv "8.12.0"
     ajv-formats "2.1.1"
