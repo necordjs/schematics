@@ -39,7 +39,7 @@
 	],
 	"dependencies": {
 		"@angular-devkit/core": "17.0.7",
-		"@angular-devkit/schematics": "17.0.6",
+		"@angular-devkit/schematics": "17.0.7",
 		"@nestjs/schematics": "10.0.3",
 		"rxjs": "7.8.1"
 	},
