@@ -38,7 +38,7 @@
 		"necord"
 	],
 	"dependencies": {
-		"@angular-devkit/core": "18.2.7",
+		"@angular-devkit/core": "18.2.8",
 		"@angular-devkit/schematics": "18.2.7",
 		"@nestjs/schematics": "10.1.4",
 		"rxjs": "7.8.1"
