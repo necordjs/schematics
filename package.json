@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@angular-devkit/core": "19.1.1",
 		"@angular-devkit/schematics": "19.1.2",
-		"@nestjs/schematics": "10.2.3",
+		"@nestjs/schematics": "11.0.0",
 		"rxjs": "7.8.1"
 	},
 	"devDependencies": {
