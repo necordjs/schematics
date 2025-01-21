@@ -19,7 +19,7 @@ export default tseslint.config(
 			ecmaVersion: 5,
 			sourceType: 'module',
 			parserOptions: {
-				project: ['tsconfig.json', 'tsconfig.build.json', 'tsconfig.spec.json'],
+				project: ['tsconfig.json', 'tsconfig.spec.json', 'tsconfig.spec.json'],
 				projectService: true,
 				tsconfigRootDir: import.meta.dirname
 			}
