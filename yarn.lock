@@ -19,30 +19,6 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/core@19.1.2":
-  version "19.1.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.1.2.tgz#0d2de34df90dbf69f27edbf73e8f50af1377c0e0"
-  integrity sha512-sCYu96C7ToeLGi+ggs2+TxOt1/5eC6WZe/SR7cLpf9rv+gi3ijbH2w+JP6aR4Ne12EL6WGkes42rfT5fL+Z4Gg==
-  dependencies:
-    ajv "8.17.1"
-    ajv-formats "3.0.1"
-    jsonc-parser "3.3.1"
-    picomatch "4.0.2"
-    rxjs "7.8.1"
-    source-map "0.7.4"
-
-"@angular-devkit/core@19.1.3":
-  version "19.1.3"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-19.1.3.tgz#79c3d6ece36ad2e5378e58ff79fe38c00c870fc5"
-  integrity sha512-of/TKfJ/vL+/qvr4PbDTtqbFJGFHPfu6bEJrIZsLMYA+Mej8SyTx3kDm4LLnKQBtWVYDqkrxvcpOb4+NmHNLfA==
-  dependencies:
-    ajv "8.17.1"
-    ajv-formats "3.0.1"
-    jsonc-parser "3.3.1"
-    picomatch "4.0.2"
-    rxjs "7.8.1"
-    source-map "0.7.4"
-
 "@angular-devkit/schematics@19.0.1":
   version "19.0.1"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-19.0.1.tgz#f6f6e30988c42184cc0ae921ee9747756a723baa"
@@ -51,17 +27,6 @@
     "@angular-devkit/core" "19.0.1"
     jsonc-parser "3.3.1"
     magic-string "0.30.12"
-    ora "5.4.1"
-    rxjs "7.8.1"
-
-"@angular-devkit/schematics@19.1.2":
-  version "19.1.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-19.1.2.tgz#c1876e69573e4ce722fab7186f0e911d7350d572"
-  integrity sha512-+eeDvbTj37Yczs3S1Hy42Nr1OG5BHORDPdY+bLIP383aTFjfTtlMIya46iNvMCYjinvnQkC4GcKdsa4ews3c9A==
-  dependencies:
-    "@angular-devkit/core" "19.1.2"
-    jsonc-parser "3.3.1"
-    magic-string "0.30.17"
     ora "5.4.1"
     rxjs "7.8.1"
 
@@ -512,7 +477,7 @@
 
 "@jridgewell/sourcemap-codec@^1.5.0":
   version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
+  resolved "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.0.tgz#3188bcb273a414b0d215fd22a58540b989b9409a"
   integrity sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==
 
 "@nestjs/schematics@11.0.0":
@@ -3232,13 +3197,6 @@ magic-string@0.30.12:
   version "0.30.12"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.12.tgz#9eb11c9d072b9bcb4940a5b2c2e1a217e4ee1a60"
   integrity sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.5.0"
-
-magic-string@0.30.17:
-  version "0.30.17"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.17.tgz#450a449673d2460e5bbcfba9a61916a1714c7453"
-  integrity sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 

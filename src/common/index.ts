@@ -36,7 +36,7 @@ export class CommonSchematicFactory<T extends CommonOptions = CommonOptions> {
 	public create(options: T): Rule {
 		options = this.transform(options);
 		return branchAndMerge(
-			chain([mergeWith(this.generate(options)), this.addDeclarationToModule(options), mergeSourceRoot(options)])
+			chain([mergeSourceRoot(options), this.addDeclarationToModule(options), mergeWith(this.generate(options))])
 		);
 	}
 
