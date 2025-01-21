@@ -1,7 +1,6 @@
-import { describe } from 'node:test';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
-import { CommonOptions } from '../common';
+import { CommonOptions } from '../src/common';
 
 describe('Modal Factory', () => {
 	const runner: SchematicTestRunner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'));
@@ -14,7 +13,7 @@ describe('Modal Factory', () => {
 			spec: false
 		};
 
-		const tree = await runner.runSchematicAsync('modal', options).toPromise();
+		const tree = await runner.runSchematic('modal', options);
 
 		expect(tree.files).toEqual(['/modal/modal.modals.ts']);
 	});

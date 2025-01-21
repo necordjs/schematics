@@ -1,8 +1,7 @@
-import { describe } from 'node:test';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
-import { ComponentOptions } from './component-options.interface';
-import { ComponentType } from './component-type.enum';
+import { ComponentOptions } from '../src/component/component-options.interface';
+import { ComponentType } from '../src/component/component-type.enum';
 
 describe('Component Factory', () => {
 	const runner: SchematicTestRunner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'));
@@ -16,7 +15,7 @@ describe('Component Factory', () => {
 			strategy: ComponentType.Button
 		};
 
-		const tree = await runner.runSchematicAsync('component', options).toPromise();
+		const tree = await runner.runSchematic('component', options);
 
 		expect(tree.files).toEqual(['/button/button.components.ts']);
 	});
@@ -30,7 +29,7 @@ describe('Component Factory', () => {
 			strategy: ComponentType.Select
 		};
 
-		const tree = await runner.runSchematicAsync('component', options).toPromise();
+		const tree = await runner.runSchematic('component', options);
 
 		expect(tree.files).toEqual(['/select/select.components.ts']);
 	});

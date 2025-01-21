@@ -1,8 +1,7 @@
-import { describe } from 'node:test';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
-import { ContextMenuOptions } from './context-menu-options.interface';
-import { ContextMenuType } from './context-menu-type.enum';
+import { ContextMenuOptions } from '../src/context-menu/context-menu-options.interface';
+import { ContextMenuType } from '../src/context-menu/context-menu-type.enum';
 
 describe('Context Menu Factory', () => {
 	const runner: SchematicTestRunner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'));
@@ -16,7 +15,7 @@ describe('Context Menu Factory', () => {
 			strategy: ContextMenuType.Message
 		};
 
-		const tree = await runner.runSchematicAsync('context-menu', options).toPromise();
+		const tree = await runner.runSchematic('context-menu', options);
 
 		expect(tree.files).toEqual(['/message/message.commands.ts']);
 	});
@@ -30,7 +29,7 @@ describe('Context Menu Factory', () => {
 			strategy: ContextMenuType.User
 		};
 
-		const tree = await runner.runSchematicAsync('context-menu', options).toPromise();
+		const tree = await runner.runSchematic('context-menu', options);
 
 		expect(tree.files).toEqual(['/user/user.commands.ts']);
 	});

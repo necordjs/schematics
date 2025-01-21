@@ -1,8 +1,7 @@
-import { describe } from 'node:test';
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
-import { CommandOptions } from './command-options.interface';
-import { CommandType } from './command-type.enum';
+import { CommandOptions } from '../src/command/command-options.interface';
+import { CommandType } from '../src/command/command-type.enum';
 
 describe('Command Factory', () => {
 	const runner: SchematicTestRunner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'));
@@ -16,7 +15,7 @@ describe('Command Factory', () => {
 			strategy: CommandType.TEXT_COMMAND
 		};
 
-		const tree = await runner.runSchematicAsync('command', options).toPromise();
+		const tree = await runner.runSchematic('command', options);
 
 		expect(tree.files).toEqual(['/text/text.commands.ts']);
 	});
@@ -30,7 +29,7 @@ describe('Command Factory', () => {
 			strategy: CommandType.SLASH_COMMAND
 		};
 
-		const tree = await runner.runSchematicAsync('command', options).toPromise();
+		const tree = await runner.runSchematic('command', options);
 
 		expect(tree.files).toEqual(['/slash/slash.commands.ts']);
 	});
