@@ -25,11 +25,11 @@ jobs:
 
       - name: Run ESlint
         run: yarn lint
-        
-      - name: Run build
+
+      - name: Run Build
         run: yarn build
 
       - name: Run Tests
-        run: yarn test --ci --passWithNoTests
+        run: yarn test:ci
 
 

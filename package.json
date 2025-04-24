@@ -14,7 +14,10 @@
 		"prepare": "husky",
 		"format": "prettier --write \"src/**/*.ts\"",
 		"lint": "eslint --ignore-pattern .gitignore {integration,src}/**/*.ts",
-		"test": "jest"
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:cov": "jest --coverage",
+		"test:ci": "jest --ci --passWithNoTests --coverage"
 	},
 	"schematics": "./dist/collection.json",
 	"main": "dist/index.js",
@@ -46,6 +49,7 @@
 		"@commitlint/config-angular": "19.8.0",
 		"@eslint/eslintrc": "^3.2.0",
 		"@eslint/js": "^9.18.0",
+		"@nestjs/testing": "^11.1.0",
 		"@release-it/conventional-changelog": "^10.0.0",
 		"@types/jest": "^29.5.14",
 		"@types/node": "22.14.1",
@@ -60,7 +64,7 @@
 		"prettier": "3.5.3",
 		"release-it": "19.0.1",
 		"rimraf": "6.0.1",
-		"ts-jest": "^29.2.5",
+		"ts-jest": "^29.3.2",
 		"typescript": "5.8.3",
 		"typescript-eslint": "^8.21.0"
 	},
