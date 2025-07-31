@@ -41,7 +41,7 @@
 		"necord"
 	],
 	"dependencies": {
-		"@nestjs/schematics": "11.0.5",
+		"@nestjs/schematics": "11.0.7",
 		"rxjs": "7.8.2"
 	},
 	"devDependencies": {
