@@ -42,7 +42,7 @@ export class CommonSchematicFactory<T extends CommonOptions = CommonOptions> {
 
 	public generate(options: T): Source {
 		return (context: SchematicContext) =>
-			apply(url(join(this.templatePath as Path)), [
+			apply(url(join(this.templatePath)), [
 				options.spec ? noop() : filter((path: string) => !path.endsWith('.spec.ts')),
 				applyTemplates({
 					...strings,
@@ -82,7 +82,7 @@ export class CommonSchematicFactory<T extends CommonOptions = CommonOptions> {
 		target.name = strings.dasherize(location.name);
 		target.path = strings.dasherize(location.path);
 
-		target.path = target.flat ? target.path : join(target.path as Path, target.name);
+		target.path = target.flat ? target.path : join(target.path, target.name);
 		return target;
 	}
 }
