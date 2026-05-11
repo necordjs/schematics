@@ -42,7 +42,7 @@ schematics --help
 Now you can execute generation commands.
 
 ```bash
-yarn build
+npm run build
 schematics .:command
 ```
 
