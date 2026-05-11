@@ -1,5 +1,6 @@
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
+
 import { ContextMenuOptions } from '../src/context-menu/context-menu-options.interface';
 import { ContextMenuType } from '../src/context-menu/context-menu-type.enum';
 

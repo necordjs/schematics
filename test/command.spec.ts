@@ -1,5 +1,6 @@
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
+
 import { CommandOptions } from '../src/command/command-options.interface';
 import { CommandType } from '../src/command/command-type.enum';
 

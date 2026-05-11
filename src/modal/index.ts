@@ -1,5 +1,6 @@
-import { CommonOptions, CommonSchematicFactory } from '../common';
 import { Rule, Source } from '@angular-devkit/schematics';
+
+import { CommonOptions, CommonSchematicFactory } from '../common';
 
 class ModalSchematicFactory extends CommonSchematicFactory<CommonOptions> {
 	public type = 'modal';

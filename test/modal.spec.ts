@@ -1,5 +1,6 @@
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
+
 import { CommonOptions } from '../src/common';
 
 describe('Modal Factory', () => {

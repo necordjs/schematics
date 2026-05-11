@@ -1,4 +1,3 @@
-import { Path, strings } from '@angular-devkit/core';
 import {
 	apply,
 	applyTemplates,
@@ -23,7 +22,9 @@ import {
 	ModuleFinder,
 	NameParser
 } from '@nestjs/schematics';
+import { Path, strings } from '@angular-devkit/core';
 import { join } from 'path';
+
 import { CommonOptions } from './common-options.interface';
 
 export * from './common-options.interface';

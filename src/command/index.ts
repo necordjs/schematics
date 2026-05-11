@@ -1,6 +1,7 @@
-import { CommonSchematicFactory } from '../common';
 import { Rule, Source } from '@angular-devkit/schematics';
+
 import { CommandOptions } from './command-options.interface';
+import { CommonSchematicFactory } from '../common';
 import { CommandType } from './command-type.enum';
 
 class CommandSchematicFactory extends CommonSchematicFactory<CommandOptions> {

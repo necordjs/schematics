@@ -1,5 +1,6 @@
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
 import { join } from 'path';
+
 import { ComponentOptions } from '../src/component/component-options.interface';
 import { ComponentType } from '../src/component/component-type.enum';
 
