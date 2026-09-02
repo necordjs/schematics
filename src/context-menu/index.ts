@@ -1,8 +1,8 @@
 import { Rule, Source } from '@angular-devkit/schematics';
 
-import { ContextMenuOptions } from './context-menu-options.interface';
-import { ContextMenuType } from './context-menu-type.enum';
-import { CommonSchematicFactory } from '../common';
+import { ContextMenuOptions } from './context-menu-options.interface.js';
+import { ContextMenuType } from './context-menu-type.enum.js';
+import { CommonSchematicFactory } from '../common/index.js';
 
 class ContextMenuSchematicFactory extends CommonSchematicFactory<ContextMenuOptions> {
 	public type = 'context-menu';

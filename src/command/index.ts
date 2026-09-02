@@ -1,8 +1,8 @@
 import { Rule, Source } from '@angular-devkit/schematics';
 
-import { CommandOptions } from './command-options.interface';
-import { CommonSchematicFactory } from '../common';
-import { CommandType } from './command-type.enum';
+import { CommandOptions } from './command-options.interface.js';
+import { CommonSchematicFactory } from '../common/index.js';
+import { CommandType } from './command-type.enum.js';
 
 class CommandSchematicFactory extends CommonSchematicFactory<CommandOptions> {
 	public type = 'command';

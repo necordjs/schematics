@@ -1,8 +1,8 @@
 import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
-import { join } from 'path';
+import { join } from 'node:path';
 
-import { ContextMenuOptions } from '../src/context-menu/context-menu-options.interface';
-import { ContextMenuType } from '../src/context-menu/context-menu-type.enum';
+import { ContextMenuOptions } from '../src/context-menu/context-menu-options.interface.js';
+import { ContextMenuType } from '../src/context-menu/context-menu-type.enum.js';
 
 describe('Context Menu Factory', () => {
 	const runner: SchematicTestRunner = new SchematicTestRunner('.', join(process.cwd(), 'src/collection.json'));
@@ -19,6 +19,7 @@ describe('Context Menu Factory', () => {
 		const tree = await runner.runSchematic('context-menu', options);
 
 		expect(tree.files).toEqual(['/message/message.commands.ts']);
+		expect(tree.readContent('/message/message.commands.ts')).toContain("@MessageCommand({ name: 'message' })");
 	});
 
 	it('should generate a user context menu', async () => {
@@ -33,5 +34,6 @@ describe('Context Menu Factory', () => {
 		const tree = await runner.runSchematic('context-menu', options);
 
 		expect(tree.files).toEqual(['/user/user.commands.ts']);
+		expect(tree.readContent('/user/user.commands.ts')).toContain("@UserCommand({ name: 'user' })");
 	});
 });
