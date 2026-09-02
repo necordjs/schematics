@@ -1,8 +1,8 @@
 import { Rule, Source } from '@angular-devkit/schematics';
 
-import { ComponentOptions } from './component-options.interface';
-import { ComponentType } from './component-type.enum';
-import { CommonSchematicFactory } from '../common';
+import { ComponentOptions } from './component-options.interface.js';
+import { CommonSchematicFactory } from '../common/index.js';
+import { ComponentType } from './component-type.enum.js';
 
 class ComponentSchematicFactory extends CommonSchematicFactory<ComponentOptions> {
 	public type = 'component';

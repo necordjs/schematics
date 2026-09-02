@@ -8,6 +8,9 @@ on:
     tags:
       - '!**'
 
+permissions:
+  contents: read
+
 jobs:
   publish:
     if: github.actor != 'dependabot[bot]'
@@ -28,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Verify package
+        run: npm run test:package
 
       - run: npx pkg-pr-new publish --compact

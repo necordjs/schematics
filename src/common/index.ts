@@ -23,11 +23,11 @@ import {
 	NameParser
 } from '@nestjs/schematics';
 import { Path, strings } from '@angular-devkit/core';
-import { join } from 'path';
+import { join } from 'node:path';
 
-import { CommonOptions } from './common-options.interface';
+import { CommonOptions } from './common-options.interface.js';
 
-export * from './common-options.interface';
+export * from './common-options.interface.js';
 
 export class CommonSchematicFactory<T extends CommonOptions = CommonOptions> {
 	public templatePath = './files';
