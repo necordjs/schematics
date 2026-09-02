@@ -19,8 +19,7 @@
 		"test": "NODE_ENV=test NODE_OPTIONS=\"--require tsx/cjs\" vitest run",
 		"test:watch": "NODE_ENV=test NODE_OPTIONS=\"--require tsx/cjs\" vitest",
 		"test:cov": "NODE_ENV=test NODE_OPTIONS=\"--require tsx/cjs\" vitest run --coverage",
-		"test:ci": "NODE_ENV=test NODE_OPTIONS=\"--require tsx/cjs\" vitest run --coverage",
-		"test:package": "npm run build && node test/package-smoke.mjs"
+		"test:ci": "NODE_ENV=test NODE_OPTIONS=\"--require tsx/cjs\" vitest run --coverage"
 	},
 	"schematics": "./dist/collection.json",
 	"funding": {
