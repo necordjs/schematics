@@ -62,7 +62,7 @@
 		"@commitlint/cli": "21.2.3",
 		"@commitlint/config-angular": "21.2.3",
 		"@release-it/conventional-changelog": "^12.0.0",
-		"@types/node": "26.6.2",
+		"@types/node": "26.6.3",
 		"@typescript/native": "npm:typescript@7.0.2",
 		"@vitest/coverage-v8": "5.0.2",
 		"copyfiles": "2.4.1",
